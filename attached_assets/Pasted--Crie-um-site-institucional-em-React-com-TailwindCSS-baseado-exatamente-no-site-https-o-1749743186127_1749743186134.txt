@@ -1,0 +1,68 @@
+🎯 Crie um site institucional em **React** com TailwindCSS baseado **exatamente** no site: https://odontocapederbyepiedade.com.br/home-page  
+Use a estrutura, estilo visual, cores, textos base e organização de seções idênticas ao original. O foco é conversão e apresentação profissional para uma clínica odontológica.
+
+---
+
+## 📐 Estrutura do site (one-page layout):
+
+1. **Header Hero**
+   - Fundo azul-petróleo (#002B45), texto branco.
+   - Título: “Sorria com Confiança!”
+   - Botão “Agende uma Avaliação” com âncora para o formulário.
+   - WhatsApp flutuante no canto inferior direito.
+
+2. **Tratamentos**
+   - Cards com nomes e descrições breves dos serviços:
+     - Implantes
+     - Ortodontia
+     - Invisalign
+     - Lentes de Contato Dental
+     - Clareamento
+     - Botox
+   - Layout em grid (3 colunas no desktop, 1 no mobile).
+
+3. **Resultados Reais**
+   - Galeria com imagens de antes e depois (slider horizontal/carrossel).
+   - Título e legenda de reforço da prova social.
+
+4. **Nossa Estrutura**
+   - Imagens da clínica (ex: recepção, consultórios).
+   - Layout 2 colunas no desktop.
+   - Texto: “Ambiente confortável e moderno para seu atendimento”.
+
+5. **Localizações**
+   - 2 cards: Derby e Piedade
+   - Cada card com título, iframe do Google Maps e botão “Agendar nessa unidade”.
+
+6. **Formulário de Pré-Agendamento**
+   - Campos: nome, telefone, unidade (select), botão enviar.
+   - Título: “Pré-agende sua consulta, entraremos em contato”.
+
+7. **Rodapé**
+   - Logo, redes sociais e direitos reservados.
+   - Fundo azul-petróleo com texto branco.
+
+---
+
+## 🎨 Cores e Estilo:
+
+- **Primária:** #002B45 (azul-petróleo)
+- **Secundária:** #6EC1E4 (azul claro)
+- **Fundo seções claras:** #F4F4F4
+- **Tipografia:** Montserrat para títulos, Open Sans para textos
+- **Ícones/Imagens**: usar imagens de pessoas sorrindo e clínicas modernas
+
+---
+
+## ⚙️ Funcionalidades:
+
+- Totalmente responsivo (mobile first)
+- Animações suaves (fade-in ao rolar)
+- Botão flutuante de WhatsApp (link: `https://wa.me/5581XXXXXXXXX`)
+- SEO-friendly (tags semanticamente organizadas)
+- Galeria em slider/carrossel na seção “Resultados”
+
+---
+
+📌 **Importante:** mantenha os mesmos textos, seções e organização do site original indicado. Use nomes e chamadas reais observadas no link. O objetivo é ter um clone funcional e visualmente fiel.
+
