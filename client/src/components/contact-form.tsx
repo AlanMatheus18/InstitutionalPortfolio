@@ -66,17 +66,14 @@ export default function ContactForm() {
   return (
     <section className="py-20 bg-dental-primary text-white" id="formulario">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 animate-on-scroll">
+          <h2 className="text-center text-4xl md:text-3xl font-montserrat font-bold mb-4">
               Pré-agende sua consulta
             </h2>
-            <p className="text-xl text-gray-100">
+            <p className="text-center text-lg text-gray-100 pb-6">
               Entraremos em contato para confirmar sua consulta e esclarecer todas as suas dúvidas.
             </p>
-          </div>
-          
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 animate-on-scroll">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -127,30 +124,6 @@ export default function ContactForm() {
                 
                 <FormField
                   control={form.control}
-                  name="unit"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-sm font-montserrat font-semibold text-white">
-                        Unidade de Preferência
-                      </FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger className="w-full px-4 py-3 rounded-lg bg-white/20 backdrop-blur-sm border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-dental-secondary transition-all duration-300">
-                            <SelectValue placeholder="Selecione uma unidade" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="derby">Derby</SelectItem>
-                          <SelectItem value="piedade">Piedade</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage className="text-dental-secondary" />
-                    </FormItem>
-                  )}
-                />
-                
-                <FormField
-                  control={form.control}
                   name="treatment"
                   render={({ field }) => (
                     <FormItem>
@@ -186,8 +159,8 @@ export default function ContactForm() {
                 </Button>
               </form>
             </Form>
-          </div>
-        </div>
+          </div>          
+        </div>       
       </div>
     </section>
   );

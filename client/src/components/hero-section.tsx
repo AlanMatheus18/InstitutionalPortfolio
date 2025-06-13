@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 
+
 export default function HeroSection() {
   const scrollToForm = () => {
     document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' });
@@ -11,11 +12,11 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-r from-dental-primary via-dental-primary/95 to-dental-primary/80"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-montserrat font-bold mb-6 leading-tight">
+        <div className="max-w-4xl text-left animate-fade-in">
+          <h1 className="text-4xl md:text-6xl font-montserrat font-bold mb-6 leading-tight">
             Sorria com <span className="text-dental-secondary">Confiança!</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-2xl leading-relaxed">
             Transforme seu sorriso com nossa equipe especializada. Tratamentos modernos e personalizados para você sorrir sem limites.
           </p>
           <button 
@@ -30,6 +31,9 @@ export default function HeroSection() {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-dental-secondary text-2xl" />
       </div>
+      
     </section>
+      
+
   );
 }

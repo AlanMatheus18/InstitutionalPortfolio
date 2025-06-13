@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import HeroSection from "@/components/hero-section";
-import TreatmentSection from "@/components/treatment-section";
+
 import ResultsSection from "@/components/results-section";
 import StructureSection from "@/components/structure-section";
 import LocationsSection from "@/components/locations-section";
@@ -36,7 +36,7 @@ export default function Home() {
     <div className="min-h-screen">
      
       <HeroSection />
-      <TreatmentSection />
+      <ContactForm /> 
       <ResultsSection />
       <StructureSection />
       <LocationsSection />
