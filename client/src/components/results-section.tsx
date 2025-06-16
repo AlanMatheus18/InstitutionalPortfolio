@@ -1,23 +1,17 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import img1 from '../../src/assets/imgs/ANTES.webp'
+import img2 from '../../src/assets/imgs/DEPOIS.webp'
 const carouselImages = [
   {
-    src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
-    alt: "Resultado de clareamento dental antes e depois"
+    src: img1,
+    alt: "Resultado de clareamento dental antes"
   },
   {
-    src: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600", 
-    alt: "Resultado de implante dental antes e depois"
+    src: img2,
+    alt: "Resultado de implante dental depois"
   },
-  {
-    src: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
-    alt: "Resultado de ortodontia antes e depois"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
-    alt: "Resultado de lentes de contato dental antes e depois"
-  }
+
 ];
 
 export default function ResultsSection() {
@@ -52,46 +46,45 @@ export default function ResultsSection() {
             Veja as transformações incríveis que já realizamos. Cada sorriso conta uma história de sucesso.
           </p>
         </div>
-        
+
         <div className="relative max-w-6xl mx-auto">
           <div className="overflow-hidden rounded-2xl shadow-2xl">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               {carouselImages.map((image, index) => (
-                <div key={index} className="min-w-full">
-                  <img 
-                    src={image.src} 
+                <div key={index} className="min-w-full flex justify-center items-center">
+                  <img
+                    src={image.src}
                     alt={image.alt}
-                    className="w-full h-96 object-cover"
+                    className="rounded-2xl w-[60%] max-h-96 object-cover shadow"
                   />
                 </div>
               ))}
             </div>
           </div>
-          
-          <button 
+
+          <button
             onClick={previousSlide}
             className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-dental-primary rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
           >
             <ChevronLeft size={24} />
           </button>
-          <button 
+          <button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-dental-primary rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110"
           >
             <ChevronRight size={24} />
           </button>
-          
+
           <div className="flex justify-center mt-8 space-x-3">
             {carouselImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? 'bg-dental-secondary' : 'bg-gray-300'
-                }`}
+                className={`w-4 h-4 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-dental-secondary' : 'bg-gray-300'
+                  }`}
               />
             ))}
           </div>

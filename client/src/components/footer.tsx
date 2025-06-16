@@ -1,12 +1,13 @@
 import { Facebook, Instagram, MessageCircle, MapPin, Phone, Clock } from "lucide-react";
-
+import logo from '../../src/assets/imgs/DentalSant.webp'
 export default function Footer() {
   return (
     <footer className="bg-dental-primary text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="text-2xl font-montserrat font-bold mb-6">Odonto Cape</h3>
+            
+            <img className="text-2xl font-montserrat font-bold mb-6" src={logo} alt=""/>
             <p className="text-gray-300 leading-relaxed mb-6">
               Transformando sorrisos com excelência, tecnologia e cuidado humanizado. Sua saúde bucal é nossa prioridade.
             </p>
@@ -34,26 +35,10 @@ export default function Footer() {
             </div>
           </div>
           
-          <div>
-            <h4 className="text-xl font-montserrat font-bold mb-6">Unidade Derby</h4>
-            <div className="space-y-3 text-gray-300">
-              <p className="flex items-center">
-                <MapPin className="text-dental-secondary mr-2" size={16} />
-                Rua Example, 123 - Derby
-              </p>
-              <p className="flex items-center">
-                <Phone className="text-dental-secondary mr-2" size={16} />
-                (81) 3333-3333
-              </p>
-              <p className="flex items-center">
-                <Clock className="text-dental-secondary mr-2" size={16} />
-                Seg-Sex: 8h às 18h
-              </p>
-            </div>
-          </div>
+          
           
           <div>
-            <h4 className="text-xl font-montserrat font-bold mb-6">Unidade Piedade</h4>
+            <h4 className="text-xl font-montserrat font-bold mb-6">Clínica Piedade</h4>
             <div className="space-y-3 text-gray-300">
               <p className="flex items-center">
                 <MapPin className="text-dental-secondary mr-2" size={16} />

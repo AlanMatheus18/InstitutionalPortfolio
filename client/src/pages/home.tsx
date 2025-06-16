@@ -4,7 +4,7 @@ import HeroSection from "@/components/hero-section";
 import ResultsSection from "@/components/results-section";
 import StructureSection from "@/components/structure-section";
 import LocationsSection from "@/components/locations-section";
-import ContactForm from "@/components/contact-form";
+
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/floating-whatsapp";
 
@@ -36,11 +36,9 @@ export default function Home() {
     <div className="min-h-screen">
      
       <HeroSection />
-      <ContactForm /> 
       <ResultsSection />
       <StructureSection />
       <LocationsSection />
-      <ContactForm />
       <Footer />
       <FloatingWhatsApp />
     </div>
