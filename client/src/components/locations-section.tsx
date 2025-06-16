@@ -7,7 +7,7 @@ export default function LocationsSection() {
     <section className="py-20 bg-dental-light" id="localizacoes">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-dental-primary mb-4">
+          <h2 className="text-4xl md:text-4xl font-montserrat font-bold text-dental-primary mb-4">
             Nossa Localização
           </h2>
 

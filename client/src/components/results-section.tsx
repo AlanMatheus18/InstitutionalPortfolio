@@ -1,22 +1,21 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import img1 from '../../src/assets/imgs/ANTES.webp'
-import img2 from '../../src/assets/imgs/DEPOIS.webp'
-const carouselImages = [
-  {
-    src: img1,
-    alt: "Resultado de clareamento dental antes"
-  },
-  {
-    src: img2,
-    alt: "Resultado de implante dental depois"
-  },
 
+// Importe seus componentes de comparação de antes/depois
+import { Result } from "../components/Result";
+import { Result2 } from "../components/Result2";
+
+
+// Adicione aqui quantos quiser
+const carouselSlides = [
+  <Result key="result" />,
+  <Result2 key="result1" />,
+  
 ];
 
 export default function ResultsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = carouselImages.length;
+  const totalSlides = carouselSlides.length;
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -53,15 +52,13 @@ export default function ResultsSection() {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {carouselImages.map((image, index) => (
-                <div key={index} className="min-w-full flex justify-center items-center">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="rounded-2xl w-[60%] max-h-96 object-cover shadow"
-                  />
-                </div>
-              ))}
+              {carouselSlides.map((Component, index) => (
+  <div key={index} className="min-w-full flex justify-center items-center p-6">
+    <div className="w-[60%] max-h-96 rounded-2xl overflow-hidden shadow-xl">
+      {Component}
+    </div>
+  </div>
+))}
             </div>
           </div>
 
@@ -79,12 +76,13 @@ export default function ResultsSection() {
           </button>
 
           <div className="flex justify-center mt-8 space-x-3">
-            {carouselImages.map((_, index) => (
+            {carouselSlides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-4 h-4 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-dental-secondary' : 'bg-gray-300'
-                  }`}
+                className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                  index === currentSlide ? 'bg-dental-secondary' : 'bg-gray-300'
+                }`}
               />
             ))}
           </div>

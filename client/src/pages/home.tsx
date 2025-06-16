@@ -8,6 +8,8 @@ import LocationsSection from "@/components/locations-section";
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/floating-whatsapp";
 
+import Beneficio from '@/components/Beneficio';
+
 export default function Home() {
   useEffect(() => {
     // Scroll animation observer
@@ -36,6 +38,7 @@ export default function Home() {
     <div className="min-h-screen">
      
       <HeroSection />
+      <Beneficio/>
       <ResultsSection />
       <StructureSection />
       <LocationsSection />
