@@ -16,13 +16,17 @@ export default function HeroSection() {
         <p className="text-xl md:text-xl mb-8 text-gray-100 max-w-2xl leading-relaxed">
           O alinhador transparente que transforma seu sorriso sem comprometer sua rotina.
         </p>
-        <button
-          onClick={scrollToForm}
-          className="inline-block bg-dental-secondary hover:bg-blue-400 text-dental-primary font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl"
+        <a href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Agende uma Avaliação Gratuita
-        </button>
-
+          <button
+            onClick={scrollToForm}
+            className="inline-block bg-dental-secondary hover:bg-blue-400 text-dental-primary font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl"
+          >
+            Agende uma Avaliação Gratuita
+          </button>
+        </a>
       </div>
 
       <div className="md:w-[800px] h-[700px] bg-color[none] " id="formulario">
@@ -31,7 +35,7 @@ export default function HeroSection() {
           className="w-[500px] h-full mt-[-50px]"
           frameBorder="0"
           scrolling="no"
-          
+
         ></iframe>
       </div>
 

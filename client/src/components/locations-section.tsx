@@ -33,12 +33,14 @@ export default function LocationsSection() {
                 />
 
               </div>
+              <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Odontol%C3%B3gica+Dental+Sant%C3%A9/@-8.174582,-34.916794,16z/data=!4m6!3m5!1s0x7aae1afedba4ce5:0xd1768fbdcfa5addb!8m2!3d-8.1745822!4d-34.9167938!16s%2Fg%2F11gfnf_3bs?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">
               <button
                 onClick={scrollToForm}
                 className="inline-block bg-dental-secondary hover:bg-blue-400 text-white font-montserrat font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105"
               >
-                Agendar nessa unidade
+                Venha Conhecer a nossa Clinica
               </button>
+              </a>
             </div>
           </div>
 

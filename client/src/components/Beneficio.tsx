@@ -15,7 +15,7 @@ const structureImages = [
   {
     src: conforto,
     alt: "Conforto incomparável",
-    title: "Conforto Incomparável", 
+    title: "Conforto Incomparável",
     description: ""
   },
   {
@@ -41,12 +41,12 @@ export default function StructureSection() {
             Por que Escolher Invisalign?
           </h2>
         </div>
-        
+
         <div className="flex flex-wrap md:flex-nowrap  gap-12 max-w-6xl mx-auto">
           {structureImages.map((item, index) => (
             <div key={index} className="animate-on-scroll">
-              <img 
-                src={item.src} 
+              <img
+                src={item.src}
                 alt={item.alt}
                 className="rounded-2xl shadow-xl w-80 h-60 object-cover"
               />
@@ -58,6 +58,12 @@ export default function StructureSection() {
               </p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-12">
+          <button
+            className="inline-block bg-dental-secondary hover:bg-blue-400 text-dental-primary font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+            Agende uma Avaliação Gratuita
+          </button>
         </div>
       </div>
     </section>
