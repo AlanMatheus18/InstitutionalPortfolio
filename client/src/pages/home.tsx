@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import HeroSection from "@/components/hero-section";
-
+import Invisa from "@/components/Invisa";
 import ResultsSection from "@/components/results-section";
 import StructureSection from "@/components/structure-section";
 import LocationsSection from "@/components/locations-section";
+import TestimonialsSection from "@/components/Testimonials-section";
 
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/floating-whatsapp";
@@ -38,12 +39,14 @@ export default function Home() {
     <div className="min-h-screen">
      
       <HeroSection />
+      <Invisa/>
       <Beneficio/>
       <ResultsSection />
       <StructureSection />
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
+      <TestimonialsSection/>
     </div>
   );
 }

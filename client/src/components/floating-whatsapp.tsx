@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 export default function FloatingWhatsApp() {
-  const whatsappNumber = "5581999999999";
+  const whatsappNumber = "558130940025";
   const whatsappMessage = "Olá! Gostaria de agendar uma consulta.";
   
   const handleWhatsAppClick = () => {

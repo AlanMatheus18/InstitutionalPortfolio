@@ -60,7 +60,7 @@ export default function Footer() {
         
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 Odonto Cape Derby e Piedade. Todos os direitos reservados.
+            © 2025 Clínica Odontológica Dental Santé. Todos os direitos reservados.
           </p>
         </div>
       </div>

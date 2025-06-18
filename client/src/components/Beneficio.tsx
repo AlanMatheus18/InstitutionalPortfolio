@@ -1,33 +1,33 @@
-import discreta from '../../src/assets/imgs/Discreta.jpg'
-import conforto from '../../src/assets/imgs/Conforto.jpg'
-import escovar from '../../src/assets/imgs/Escovacao.jpg'
-import resulrapido from '../../src/assets/imgs/Rapido.jpg'
+import tec from '../../src/assets/imgs/3D.jpg'
+import indolor from '../../src/assets/imgs/INDOLOR.jpg'
+import natural from '../../src/assets/imgs/NATURAL.jpg'
+import equipe from '../../src/assets/imgs/EQUIPE.jpg'
 
 
 
 const structureImages = [
   {
-    src: discreta,
-    alt: "Estética Discreta",
-    title: "Estética Discreta",
+    src: tec,
+    alt: "Tecnologia de Ponta",
+    title: "Tecnologia de Ponta",
     description: ""
   },
   {
-    src: conforto,
-    alt: "Conforto incomparável",
-    title: "Conforto Incomparável",
+    src: indolor,
+    alt: "Procedimento Indolor e Seguro",
+    title: "Procedimento Indolor e Seguro",
     description: ""
   },
   {
-    src: escovar,
-    alt: "Removível para comer e escovar",
-    title: "Removível Para Comer e Escovar",
+    src: natural,
+    alt: "Estética Natural",
+    title: "Estética Natural",
     description: ""
   },
   {
-    src: resulrapido,
-    alt: "Resultados rápidos",
-    title: "Resultados Rápidos",
+    src: equipe,
+    alt: "Equipe Especializada",
+    title: "Equipe Especializada",
     description: ""
   }
 ];
@@ -38,17 +38,17 @@ export default function StructureSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-3xl font-montserrat font-bold text-dental-primary mb-4">
-            Por que Escolher Invisalign?
+            Por que escolher nossos implantes?
           </h2>
         </div>
 
-        <div className="flex flex-wrap md:flex-nowrap  gap-12 max-w-6xl mx-auto">
+        <div className="flex flex-wrap md:flex-nowrap  gap-12 max-w-6xl mx-auto justify-center">
           {structureImages.map((item, index) => (
             <div key={index} className="animate-on-scroll">
               <img
                 src={item.src}
                 alt={item.alt}
-                className="rounded-2xl shadow-xl w-80 h-60 object-cover"
+                className="rounded-2xl shadow-xl w-50 md:w-80  h-60 object-cover"
               />
               <h3 className="text-center text-[15px] font-montserrat font-bold text-dental-primary mt-6 mb-3">
                 {item.title}
@@ -61,7 +61,7 @@ export default function StructureSection() {
         </div>
         <div className="text-center mt-12">
           <button
-            className="inline-block bg-dental-secondary hover:bg-blue-400 text-dental-primary font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+            className="inline-block bg-[#25D366]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
             Agende uma Avaliação Gratuita
           </button>
         </div>
