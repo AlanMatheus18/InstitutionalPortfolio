@@ -9,22 +9,27 @@ export default function ResultsSection() {
             Resultados Reais
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Veja as transformações incríveis que já realizamos. Cada sorriso conta uma história de sucesso.
+            Veja as transformações incríveis que já realizamos. Cada sorriso
+            conta uma história de sucesso.
           </p>
         </div>
 
-       <div className="flex justify-center">
-<div className="w-full sm:w-[60%] h-64 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-    <Result />
-  </div>
-</div>
+        <div className="flex justify-center">
+          <div className="w-full sm:w-[60%] h-64 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
+            <Result />
+          </div>
+        </div>
 
         <div className="text-center mt-12">
-          <button
-            className="inline-block bg-[#25D366] text-white font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl"
+          <a
+            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Agende uma Avaliação Gratuita
-          </button>
+            <button className="inline-block bg-[#0f8516] text-white font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+              Agende uma Avaliação Gratuita
+            </button>
+          </a>
         </div>
       </div>
     </section>

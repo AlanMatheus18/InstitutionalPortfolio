@@ -64,7 +64,7 @@ export default function StructureSection() {
         </div>
         <div className="text-center mt-12">
           <button
-            className="inline-block bg-[#25D366]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+            className="inline-block bg-[#0f8516]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
             Agende uma Avaliação Gratuita
           </button>
         </div>

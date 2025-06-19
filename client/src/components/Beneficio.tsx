@@ -1,35 +1,33 @@
-import tec from '../../src/assets/imgs/3D.jpg'
-import indolor from '../../src/assets/imgs/INDOLOR.jpg'
-import natural from '../../src/assets/imgs/NATURAL.jpg'
-import equipe from '../../src/assets/imgs/EQUIPE.jpg'
-
-
+import tec from "../../src/assets/imgs/3D.jpg";
+import indolor from "../../src/assets/imgs/INDOLOR.jpg";
+import natural from "../../src/assets/imgs/NATURAL.jpg";
+import equipe from "../../src/assets/imgs/EQUIPE.jpg";
 
 const structureImages = [
   {
     src: tec,
     alt: "Tecnologia de Ponta",
     title: "Tecnologia de Ponta",
-    description: ""
+    description: "",
   },
   {
     src: indolor,
     alt: "Procedimento Indolor e Seguro",
     title: "Procedimento Indolor e Seguro",
-    description: ""
+    description: "",
   },
   {
     src: natural,
     alt: "Estética Natural",
     title: "Estética Natural",
-    description: ""
+    description: "",
   },
   {
     src: equipe,
     alt: "Equipe Especializada",
     title: "Equipe Especializada",
-    description: ""
-  }
+    description: "",
+  },
 ];
 
 export default function StructureSection() {
@@ -60,10 +58,15 @@ export default function StructureSection() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <button
-            className="inline-block bg-[#25D366]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
-            Agende uma Avaliação Gratuita
-          </button>
+          <a
+            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="inline-block bg-[#0f8516] text-white font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+              Agende uma Avaliação Gratuita
+            </button>
+          </a>
         </div>
       </div>
     </section>

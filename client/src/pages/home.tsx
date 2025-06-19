@@ -42,11 +42,12 @@ export default function Home() {
       <Invisa/>
       <Beneficio/>
       <ResultsSection />
+      <TestimonialsSection/>
       <StructureSection />
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
-      <TestimonialsSection/>
+      
     </div>
   );
 }
