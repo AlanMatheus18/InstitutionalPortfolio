@@ -35,8 +35,7 @@ Amei a tarde, um momento para recarregar as energias e se renovar. Uma delicia!"
     imageUrl={perfil5}
   />,
 ];
-
-export default function ResultsSection() {
+export default function TestimonalsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = carouselSlides.length;
 

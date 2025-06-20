@@ -30,7 +30,7 @@ const structureImages = [
   },
 ];
 
-export default function StructureSection() {
+export default function BenefitsSection() {
   return (
     <section className="py-20 bg-white" id="estrutura">
       <div className="container mx-auto px-6">

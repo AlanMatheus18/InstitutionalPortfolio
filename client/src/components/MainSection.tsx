@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
-import facetaMobile from "../../src/assets/imgs/Fundoin.webp"; // você deve ter uma versão otimizada
+import bgOverlay from "../../src/assets/imgs/bgoverlay.webp"; // você deve ter uma versão otimizada
 
-export default function HeroSection() {
+export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(faceta);
 
   const scrollToForm = () => {
@@ -13,7 +13,7 @@ export default function HeroSection() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setBackgroundImage(facetaMobile);
+        setBackgroundImage(bgOverlay);
       } else {
         setBackgroundImage(faceta);
       }
