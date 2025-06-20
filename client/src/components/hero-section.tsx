@@ -1,20 +1,37 @@
+import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import faceta from "../../src/assets/imgs/facetas.jpg";
+import faceta from "../../src/assets/imgs/Facetabg.jpeg";
+import facetaMobile from "../../src/assets/imgs/Fundoin.webp"; // você deve ter uma versão otimizada
 
 export default function HeroSection() {
+  const [backgroundImage, setBackgroundImage] = useState(faceta);
+
   const scrollToForm = () => {
-    document
-      .getElementById("formulario")
-      ?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setBackgroundImage(facetaMobile);
+      } else {
+        setBackgroundImage(faceta);
+      }
+    };
+
+    handleResize(); // aplica na montagem
+    window.addEventListener("resize", handleResize); // escuta mudanças
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section
       className="bg-[#290e49] bg-no-repeat bg-center bg-cover text-white min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center relative overflow-hidden"
       id="hero"
-      style={{ backgroundImage: `url(${faceta})` }}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="bg-black bg-opacity-30 backdrop-blur-[5px] w-[100%] h-[100%] top-0 left-0 absolute"></div>
+      <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-80 md:backdrop-blur-[5px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
 
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px">
         <h1 className="text-4xl font-montserrat font-bold mb-6 leading-tight">
@@ -38,6 +55,7 @@ export default function HeroSection() {
           </a>
         </div>
       </div>
+
       <div className="md:w-[800px] h-[600px] scale-[0.90]" id="formulario">
         <iframe
           className="mt-[-80px] md:mt-[-80px]"

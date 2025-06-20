@@ -15,18 +15,18 @@ export default function ResultsSection() {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full sm:w-[60%] h-64 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
+          <div className="w-full max-w-3xl h-auto rounded-2xl overflow-hidden shadow-xl">
             <Result />
           </div>
         </div>
 
-        <div className="text-center mt-12">
+        <div className="flex justify-center mt-12">
           <a
-            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%20seu%20site"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="inline-block bg-[#0f8516] text-white font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+            <button className="inline-block bg-[#0f8516] text-white w-[330px] font-montserrat font-bold py-4 px-8 rounded-full text-[15px] transition-all duration-300 hover:scale-105 shadow-xl">
               Agende uma Avaliação Gratuita
             </button>
           </a>

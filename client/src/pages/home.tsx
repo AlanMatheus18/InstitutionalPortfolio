@@ -5,6 +5,7 @@ import ResultsSection from "@/components/results-section";
 import StructureSection from "@/components/structure-section";
 import LocationsSection from "@/components/locations-section";
 import TestimonialsSection from "@/components/Testimonials-section";
+import TestimonialsVideo from "@/components/TestimonialsVideo";
 
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/floating-whatsapp";
@@ -39,15 +40,15 @@ export default function Home() {
     <div className="min-h-screen">
      
       <HeroSection />
+      <ResultsSection />
+      <TestimonialsVideo />
+      <StructureSection />
       <Invisa/>
       <Beneficio/>
-      <ResultsSection />
       <TestimonialsSection/>
-      <StructureSection />
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
-      
     </div>
   );
 }
