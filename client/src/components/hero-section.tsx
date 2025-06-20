@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import faceta from "../../src/assets/imgs/Facetabg.jpeg";
+import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
 import facetaMobile from "../../src/assets/imgs/Fundoin.webp"; // você deve ter uma versão otimizada
 
 export default function HeroSection() {
