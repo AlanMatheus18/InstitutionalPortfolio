@@ -1,5 +1,5 @@
 import React from "react";
-import facetas from "../../src/assets/imgs/Facetas.webp";
+import facetas from "../../src/assets/imgs/facetas-sobre.jpeg";
 
 const Sobre = () => {
   return (
@@ -28,7 +28,7 @@ const Sobre = () => {
           </div>
         </div>
 
-        <div className=" p-[10px] h-[470px] w-[450px]  rounded-xl overflow-hidden ">
+        <div className=" p-[10px] h-auto md:h-[470px] w-auto  rounded-xl overflow-hidden ">
           <img
             src={facetas}
             alt=""

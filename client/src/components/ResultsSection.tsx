@@ -1,6 +1,20 @@
 import { Result } from "./Result";
+import img1 from "../../src/assets/imgs/antes-1.webp";
+import img2 from "../../src/assets/imgs/depois-_1_.webp";
 
 export default function ResultsSection() {
+
+  const results = [
+    {
+      imgBefore: img1,
+      imgAfter: img2
+    },
+     
+    
+  ];
+
+
+
   return (
     <section className="py-20 bg-dental-light" id="resultados">
       <div className="container mx-auto px-6">
@@ -15,8 +29,15 @@ export default function ResultsSection() {
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full max-w-3xl h-auto rounded-2xl overflow-hidden shadow-xl">
-            <Result />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
+            <Result imgAntes={img1} imgDps={img2}/>
           </div>
         </div>
 

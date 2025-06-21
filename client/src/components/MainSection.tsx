@@ -56,7 +56,7 @@ export default function MainSection() {
         </div>
       </div>
 
-      <div className="md:w-[800px] h-[600px] scale-[0.90]" id="formulario">
+      <div className="hidden md:block md:w-[800px] h-[600px] scale-[0.90]" id="formulario">
         <iframe
           className="mt-[-80px] md:mt-[-80px]"
           src="https://forms.kommo.com/rwvxtrv"
