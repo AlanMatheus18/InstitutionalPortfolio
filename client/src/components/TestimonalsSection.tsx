@@ -1,13 +1,18 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Testimonials from "@/components/ui/Testimonials";
+import { Result } from "../components/Result";
 import perfil from "../assets/imgs/Perfil1.webp";
 import perfil2 from "../assets/imgs/Perfil2.webp";
 import perfil3 from "../assets/imgs/Perfil3.webp";
 import perfil4 from "../assets/imgs/Perfil4.webp";
 import perfil5 from "../assets/imgs/Perfil5.webp";
-
+import img1 from "../../src/assets/imgs/antes-1.webp";
+import img2 from "../../src/assets/imgs/depois-_1_.webp";
 const carouselSlides = [
+
+
+  
   <Testimonials
     name="Mikaline Valeria"
     comment="Clínica bem aconchegante, recepção organizada ótimos profissionais, equipe maravilhosa"
@@ -34,6 +39,8 @@ const carouselSlides = [
 Amei a tarde, um momento para recarregar as energias e se renovar. Uma delicia!"
     imageUrl={perfil5}
   />,
+  <Result imgAntes={img1} imgDps={img2} />,
+  <Result imgAntes={img1} imgDps={img2} />,
 ];
 export default function TestimonalsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,10 +51,7 @@ export default function TestimonalsSection() {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
   const goToSlide = (index: number) => setCurrentSlide(index);
 
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
-  }, []);
+ 
 
   return (
     <section className="py-20 bg-dental-light" id="resultados">
