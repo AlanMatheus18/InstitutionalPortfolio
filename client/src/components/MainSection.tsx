@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
 import bgOverlay from "../../src/assets/imgs/bgoverlay.webp"; // você deve ter uma versão otimizada
-
+import ftinvisa from '../../src/assets/imgs/Invisalignfoto.webp'
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(faceta);
 
@@ -19,8 +19,8 @@ export default function MainSection() {
       }
     };
 
-    handleResize(); 
-    window.addEventListener("resize", handleResize); 
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -66,6 +66,14 @@ export default function MainSection() {
           scrolling="no"
         ></iframe>
       </div>
+
+
+      <div className="foto relative z-10 block sm:hidden">
+        <img src={ftinvisa} alt="Imagem Invisalign" />
+      </div>
+
+
+
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-dental-secondary text-2xl" />
