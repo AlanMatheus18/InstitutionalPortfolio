@@ -1,13 +1,13 @@
 import React from "react";
 import facetas from "../../src/assets/imgs/facetas-sobre.jpeg";
 
-const Sobre = () => {
+const Profissional = () => {
   return (
     <>
       <div className="sobre bg-[#F4F4F4] gap-[8px] text-white min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center relative overflow-hidden">
         <div>
           <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-6 mb-3 ml-3 md:ml-0">
-            O que são Facetas Dentárias?
+            Dr. Aline Monteiro
           </h2>
           <p className="text-xl md:text-xl mb-8 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed ">
             Facetas dentárias são lâminas finas, geralmente feitas de porcelana
@@ -40,4 +40,4 @@ const Sobre = () => {
   );
 };
 
-export default Sobre;
+export default Profissional;

@@ -7,11 +7,13 @@ import {
   Clock,
 } from "lucide-react";
 import logo from "../../src/assets/imgs/DentalSant.webp";
+
 export default function Footer() {
   return (
     <footer className="bg-[#000] text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:flex md:justify-between gap-12 mb-12">
+          {/* Bloco 1: Logo + texto + redes */}
           <div>
             <img
               className="text-2xl font-montserrat font-bold mb-6 text-left"
@@ -47,20 +49,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div
-            className=" scale-[0.60]"
-            id="formulario"
-          >
-            <iframe
-              className="mt-[-80px] md:mt-[-80px]"
-              src="https://forms.kommo.com/rwvxtrv"
-              width={500}
-              height={650}
-              frameBorder="0"
-              scrolling="no"
-            ></iframe>
-          </div>
-
+          {/* Bloco 2: Endereço */}
           <div>
             <h4 className="text-xl font-montserrat font-bold mb-6 flex items-end">
               Clínica Piedade
@@ -81,8 +70,21 @@ export default function Footer() {
               </p>
             </div>
           </div>
+
+          <div className="block sm:hidden scale-[0.90]">
+            <iframe
+              className="w-full rounded-lg"
+              src="https://forms.kommo.com/rwvxtrv"
+              width={500}
+              height={650}
+              frameBorder="0"
+              scrolling="no"
+              title="Formulário de Avaliação"
+            ></iframe>
+          </div>
         </div>
 
+        {/* Rodapé final */}
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-gray-300">
             © 2025 Clínica Odontológica Dental Santé. Todos os direitos

@@ -19,8 +19,8 @@ export default function MainSection() {
       }
     };
 
-    handleResize(); // aplica na montagem
-    window.addEventListener("resize", handleResize); // escuta mudanças
+    handleResize(); 
+    window.addEventListener("resize", handleResize); 
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -31,7 +31,7 @@ export default function MainSection() {
       id="hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-80 md:backdrop-blur-[5px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
+      <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-80 md:backdrop-blur-[2px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
 
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px">
         <h1 className="text-4xl font-montserrat font-bold mb-6 leading-tight">

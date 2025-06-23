@@ -1,7 +1,7 @@
 import rec from '../../src/assets/imgs/Recepcao.webp'
-import consult from '../../src/assets/imgs/Consultorio.webp'
+import consult from '../../src/assets/imgs/Itero.jpg'
 import relax from '../../src/assets/imgs/Relaxante.webp'
-import tec from '../../src/assets/imgs/Tecnologia.webp'
+import tec from '../../src/assets/imgs/EstruturaGeral.jpg'
 
 
 
