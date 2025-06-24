@@ -3,45 +3,42 @@ import invisa from "../../src/assets/imgs/Aparelhoinvisa.jpg";
 
 const Sobre = () => {
   return (
-    <div className="bg-[#F4F4F4] min-h-screen flex flex-col md:flex-row justify-center items-center gap-6 px-6 py-12">
+    <>
+      <div className="sobre bg-[#F4F4F4] gap-[8px] text-white min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center relative overflow-hidden">
+        <div>
+          <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-6 mb-3 ml-3 md:ml-0">
+            O que é Invisalign?
+          </h2>
+          <p className="text-xl md:text-xl mb-8 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed ">
+            O Invisalign é um tratamento ortodôntico com alinhadores transparentes,
+            removíveis e discretos, feitos sob medida para cada paciente.
+            São usado de 20 a 22 horas por dia e trocados a cada 7 a 10 dias, conforme orientação
+            do ortodontista. O tratamento é planejado digitalmente, oferecendo mais conforto
+            e menos visitas ao consultório.
+          </p>
 
-      <div className="flex flex-col items-start w-full md:w-1/2">
-        <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-2 mb-3">
-          O que é Invisalign?
-        </h2>
-        <img
-          src={invisa}
-          alt="Aparelho Invisalign"
-          className="block sm:hidden mb-4 w-full h-[300px] max-w-[400px] rounded-xl"
-        />
-        <p className="text-x text-gray-600 mb-[20px] leading-relaxed max-w-2xl">
-          O Invisalign é um tratamento ortodôntico com alinhadores transparentes,
-          removíveis e discretos, feitos sob medida para cada paciente. 
-          São usado de 20 a 22 horas por dia e trocados a cada 7 a 10 dias, conforme orientação
-          do ortodontista. O tratamento é planejado digitalmente, oferecendo mais conforto
-          e menos visitas ao consultório.
-        </p>
+          <div className="btn">
+            <a
+              href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#0f8516] text-white ml-6 md:ml-0 font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+                Agende uma Avaliação Gratuita
+              </button>
+            </a>
+          </div>
+        </div>
 
-        <a
-          href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="bg-[#0f8516] text-white font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
-            Agende uma Avaliação Gratuita
-          </button>
-        </a>
+        <div className="flex justify-center items-center p-[10px] h-auto md:h-[470px] w-auto  rounded-xl overflow-hidden ">
+          <img
+            src={invisa}
+            alt="Aparelho Invisalign"
+            className="img h-[300px] w-[500px]  rounded-xl overflow-hidden "
+          />
+        </div>
       </div>
-
-
-      <div className="hidden sm:flex justify-center items-center md:w-1/2">
-        <img
-          src={invisa}
-          alt="Aparelho Invisalign"
-          className="h-[400px] w-[500px] rounded-xl"
-        />
-      </div>
-    </div>
+    </>
   );
 };
 
