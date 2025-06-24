@@ -71,7 +71,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="block sm:hidden scale-[0.90]">
+          <div className="block sm:hidden ">
             <iframe
               className="w-full rounded-lg"
               src="https://forms.kommo.com/rwvxtrv"

@@ -1,31 +1,31 @@
-import tec from "../../src/assets/imgs/3D.jpg";
-import indolor from "../../src/assets/imgs/INDOLOR.jpg";
-import natural from "../../src/assets/imgs/NATURAL.jpg";
-import equipe from "../../src/assets/imgs/EQUIPE.jpg";
+import tec from "../../src/assets/imgs/Discreta-BC_qrNdU.jpg";
+import indolor from "../../src/assets/imgs/Conforto-Cez7jNJR.jpg";
+import natural from "../../src/assets/imgs/Escovacao-CsNTtGfm.jpg";
+import equipe from "../../src/assets/imgs/Rapido-DMSWaZLp.jpg";
 
 const structureImages = [
   {
     src: tec,
-    alt: "Tecnologia de Ponta",
-    title: "Tecnologia de Ponta",
+    alt: "Estética Discreta",
+    title: "Estética Discreta",
     description: "",
   },
   {
     src: indolor,
-    alt: "Procedimento Indolor e Seguro",
-    title: "Procedimento Indolor e Seguro",
+    alt: "Conforto Incomparável",
+    title: "Conforto Incomparável",
     description: "",
   },
   {
     src: natural,
-    alt: "Estética Natural",
-    title: "Estética Natural",
+    alt: "Removível Para Comer e Escovar",
+    title: "Removível Para Comer e Escovar",
     description: "",
   },
   {
     src: equipe,
     alt: "Equipe Especializada",
-    title: "Equipe Especializada",
+    title: "Resultados Rápidos",
     description: "",
   },
 ];

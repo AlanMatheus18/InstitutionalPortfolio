@@ -40,10 +40,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <MainSection />
-      <Sobre />
       <ResultsSection />
       <TestimonialsVideo />
       <StructureSection />
+      <Sobre />
+      <BenefitsSection/>
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
