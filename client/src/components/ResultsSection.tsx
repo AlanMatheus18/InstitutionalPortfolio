@@ -1,16 +1,23 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Result } from "./Result";
-import img1 from "../../src/assets/imgs/antes-1.webp";
-import img2 from "../../src/assets/imgs/depois-_1_.webp";
+import img1 from "../../src/assets/imgs/Antesinvisalign.webp";
+import img2 from "../../src/assets/imgs/Depoisinvisalign.webp";
+import img3 from "../../src/assets/imgs/AntesInvisalign2.jpg";
+import img4 from "../../src/assets/imgs/Depoisinvisalign2.jpg";
 
 export default function ResultsSection() {
-  const resultSlides = [...Array(8)].map((_, index) => (
-    <Result key={index} imgAntes={img1} imgDps={img2} />
+  const resultImages = [
+    { antes: img1, depois: img2 },
+    { antes: img3, depois: img4 },
+  ];
+
+  const slides = resultImages.map((img, index) => (
+    <Result key={index} imgAntes={img.antes} imgDps={img.depois} />
   ));
 
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = resultSlides.length;
+  const totalSlides = slides.length;
 
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % totalSlides);
   const previousSlide = () =>
@@ -20,6 +27,7 @@ export default function ResultsSection() {
   return (
     <section className="py-20 bg-dental-light" id="resultados">
       <div className="container mx-auto px-6">
+
         {/* Título */}
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-dental-primary mb-4">
@@ -31,26 +39,29 @@ export default function ResultsSection() {
           </p>
         </div>
 
-        {/* DESKTOP: GRADE DE RESULTADOS */}
-        <div className="hidden sm:flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {resultSlides}
+        <div className="hidden sm:flex flex-col items-center justify-center w-full">
+          <div className="flex items-center gap-6">
+            {slides.map((slide, index) => (
+              <div key={index} className="w-[450px] max-w-full mx-auto">
+                {slide}
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* MOBILE: CARROSSEL */}
+
         <div className="block sm:hidden relative max-w-xl mx-auto mt-10">
           <div className="overflow-hidden rounded-2xl shadow-2xl">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
-              {resultSlides.map((Component, index) => (
+              {slides.map((Component, index) => (
                 <div
                   key={index}
                   className="min-w-full flex justify-center items-center p-4"
                 >
-                  <div className="w-full max-h-full rounded-2xl overflow-hidden">
+                  <div className="w-[300px] max-w-full mx-auto">
                     {Component}
                   </div>
                 </div>
@@ -58,7 +69,7 @@ export default function ResultsSection() {
             </div>
           </div>
 
-          {/* Botões */}
+
           <button
             onClick={previousSlide}
             className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-dental-primary rounded-full p-2 shadow-lg transition-all duration-300 hover:scale-110"
@@ -72,9 +83,9 @@ export default function ResultsSection() {
             <ChevronRight size={20} />
           </button>
 
-          {/* Indicadores */}
+ 
           <div className="flex justify-center mt-6 space-x-2">
-            {resultSlides.map((_, index) => (
+            {slides.map((_, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
@@ -86,7 +97,7 @@ export default function ResultsSection() {
           </div>
         </div>
 
-        {/* CTA */}
+
         <div className="text-center mt-12">
           <a
             href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%20seu%20site"

@@ -13,7 +13,7 @@ import BenefitsSection from "@/components/BenefitsSection";
 
 export default function Home() {
 
-  
+
   useEffect(() => {
     // Scroll animation observer
     const observerOptions = {
@@ -40,12 +40,10 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <MainSection />
+      <Sobre />
       <ResultsSection />
       <TestimonialsVideo />
       <StructureSection />
-      <Sobre />
-      <BenefitsSection />
-      <TestimonialsSection/>
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />

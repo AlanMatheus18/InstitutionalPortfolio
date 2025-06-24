@@ -1,6 +1,6 @@
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import img1 from '../../src/assets/imgs/antes-1.webp';
-import img2 from '../../src/assets/imgs/depois-_1_.webp';
+import img1 from '../../src/assets/imgs/Antesinvisalign.webp';
+import img2 from '../../src/assets/imgs/Depoisinvisalign.webp';
 
 export const Result = ({ imgAntes, imgDps }) => {
   return (

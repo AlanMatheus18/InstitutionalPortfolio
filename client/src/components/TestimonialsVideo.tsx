@@ -10,12 +10,15 @@ const TestimonialsVideo = () => {
           </h2>
 
           <p className="text-xl md:text-xl mb-8 mt-5 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed">
-            Já imaginou transformar completamente o seu sorriso em poucas
-            sessões? <br />
-            As <strong>facetas dentárias</strong> são a escolha ideal para quem
-            busca um sorriso mais branco, harmônico e natural de forma rápida e
-            segura. Elas corrigem imperfeições, fecham espaços e renovam a
-            estética do seu sorriso com resultados impressionantes.
+            Você sabia que é possível conquistar um sorriso alinhado
+            sem precisar usar aparelhos metálicos? O Invisalign é a
+            alternativa moderna, discreta e eficaz para quem busca corrigir
+            os dentes sem abrir mão da estética e do conforto.
+          </p>
+          <p className="text-xl md:text-xl mb-8 mt-5 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed">
+            Neste vídeo, fica evidente a transformação de quem escolheu
+            o Invisalign: mais do que alinhar os dentes, trata-se de recuperar
+            a autoestima e mostrar ao mundo a sua melhor versão.
           </p>
         </div>
 
@@ -23,7 +26,7 @@ const TestimonialsVideo = () => {
           <div className="aspect-w-9 aspect-h-16 w-full h-auto m-[10px]">
             <iframe
               className="w-full h-[350px] rounded-xl overflow-hidden"
-              src="https://www.youtube.com/embed/FMTWUKg7zzI"
+              src="https://www.youtube.com/embed/b753Mwnmxs0"
               title="YouTube video player"
               frameBorder="0"
               allowFullScreen

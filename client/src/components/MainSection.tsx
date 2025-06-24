@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
-import bgOverlay from "../../src/assets/imgs/bgoverlay.webp"; // você deve ter uma versão otimizada
-import ftinvisa from '../../src/assets/imgs/Invisalignfoto.webp'
+import bginvisalign from "../../src/assets/imgs/BgInvisalign.jpg";
+import bgOverlay from "../../src/assets/imgs/Bgoverlayinvisalign2.jpg";
+import ftinvisa from '../../src/assets/imgs/Invisalignfoto.webp';
+import logoinvisa from "../../src/assets/imgs/Logoinvisa.webp"
+
 export default function MainSection() {
-  const [backgroundImage, setBackgroundImage] = useState(faceta);
+  const [backgroundImage, setBackgroundImage] = useState(bginvisalign);
 
   const scrollToForm = () => {
     document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
@@ -15,7 +17,7 @@ export default function MainSection() {
       if (window.innerWidth < 768) {
         setBackgroundImage(bgOverlay);
       } else {
-        setBackgroundImage(faceta);
+        setBackgroundImage(bginvisalign);
       }
     };
 
@@ -31,14 +33,18 @@ export default function MainSection() {
       id="hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
+
       <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-80 md:backdrop-blur-[2px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
 
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px">
+        <img src={logoinvisa} alt="" className="w-[258px]" />
         <h1 className="text-4xl font-montserrat font-bold mb-6 leading-tight">
-          Transforme Seu Sorriso com Facetas Dentárias de Alta Estética
+          Sorria com <span className="text-dental-secondary">Confiança!</span>
         </h1>
         <p className="text-xl md:text-xl mb-8 text-gray-100 max-w-2xl leading-relaxed">
-          Descubra como alcançar dentes brancos, alinhados e com aparência natural em poucas sessões com nossos especialistas.
+          O alinhador transparente que transforma seu sorriso sem comprometer sua rotina.
+
+
         </p>
         <div className="flex justify-center md:justify-start items-center">
           <a
