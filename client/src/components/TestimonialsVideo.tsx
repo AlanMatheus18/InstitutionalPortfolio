@@ -3,7 +3,7 @@ import React from "react";
 const TestimonialsVideo = () => {
   return (
     <>
-      <div className="testimonials-container flex flex-wrap bg-white gap-[50px] p-[40px] relative ">
+      <div className="testimonials-container flex justify-center flex-wrap bg-white gap-[50px] p-[40px] relative ">
         <div>
           <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-10 ">
             O que nossos pacientes dizem sobre nós
