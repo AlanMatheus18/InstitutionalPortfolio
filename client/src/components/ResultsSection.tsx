@@ -3,11 +3,22 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Result } from "./Result";
 import img1 from "../../src/assets/imgs/antes-1.webp";
 import img2 from "../../src/assets/imgs/depois-_1_.webp";
-
+import img3 from "../../src/assets/imgs/antes-1.webp";
+import img4 from "../../src/assets/imgs/depois-_1_.webp";
+import img5 from "../../src/assets/imgs/antes-1.webp";
+import img6 from "../../src/assets/imgs/depois-_1_.webp";
 export default function ResultsSection() {
-  const resultSlides = [...Array(8)].map((_, index) => (
-    <Result key={index} imgAntes={img1} imgDps={img2} />
-  ));
+  const imagens = [
+  { antes: img1, depois: img2 },
+  { antes: img3, depois: img4 },
+  { antes: img5, depois: img6 },
+  
+];
+
+const resultSlides = imagens.map((img, index) => (
+  <Result key={index} imgAntes={img.antes} imgDps={img.depois} />
+));
+
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = resultSlides.length;
