@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
-import bgOverlay from "../../src/assets/imgs/bgoverlay.webp"; // você deve ter uma versão otimizada
-import ftinvisa from '../../src/assets/imgs/Invisalignfoto.webp'
+import bgimplante from "../../src/assets/imgs/BGImplantes.webp";
+import bgOverlay from "../../src/assets/imgs/BGoverlay2.jpg";
+import logoimplante from "../../src/assets/imgs/DentalSant.webp"
+import casal from "../../src/assets/imgs/Casal.png"
+
 export default function MainSection() {
-  const [backgroundImage, setBackgroundImage] = useState(faceta);
+  const [backgroundImage, setBackgroundImage] = useState(bgimplante);
 
   const scrollToForm = () => {
     document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
@@ -15,7 +17,7 @@ export default function MainSection() {
       if (window.innerWidth < 768) {
         setBackgroundImage(bgOverlay);
       } else {
-        setBackgroundImage(faceta);
+        setBackgroundImage(bgimplante);
       }
     };
 
@@ -31,14 +33,16 @@ export default function MainSection() {
       id="hero"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-80 md:backdrop-blur-[2px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
+      <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-60 md:backdrop-blur-[2px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
 
-      <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px">
-        <h1 className="text-4xl font-montserrat font-bold mb-6 leading-tight">
-          Transforme Seu Sorriso com Facetas Dentárias de Alta Estética
+      <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px ">
+        <img src={logoimplante} alt="" className="md:w-[258px] w-[200px]" />
+        <h1 className="text-2xl   font-montserrat font-bold mb-5 leading-tight">
+          Implantes Dentários com Resultados <span className="md:text-blue-700 text-dental-secondary font-bold">Naturais</span> e <span className="md:text-blue-700 text-dental-secondary font-bold">Duradouros</span>
         </h1>
-        <p className="text-xl md:text-xl mb-8 text-gray-100 max-w-2xl leading-relaxed">
-          Descubra como alcançar dentes brancos, alinhados e com aparência natural em poucas sessões com nossos especialistas.
+        <p className="text-xl md:text-xl  mb-8 text-gray-100 max-w-2xl leading-relaxed">
+          Volte a sorrir com segurança e qualidade. Avaliação gratuita com especialistas!
+
         </p>
         <div className="flex justify-center md:justify-start items-center">
           <a
@@ -67,10 +71,10 @@ export default function MainSection() {
         ></iframe>
       </div>
 
-
       <div className="foto relative z-10 block sm:hidden">
-        <img src={ftinvisa} alt="Imagem Invisalign" />
+        <img src={casal} alt="Imagem Invisalign" className=" h-[400px]" />
       </div>
+
 
 
 
