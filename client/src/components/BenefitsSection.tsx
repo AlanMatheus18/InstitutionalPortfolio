@@ -36,7 +36,7 @@ export default function BenefitsSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-3xl font-montserrat font-bold text-dental-primary mb-4">
-            Por que escolher nossas facetas?
+            Por que escolher Invisalign?
           </h2>
         </div>
 
