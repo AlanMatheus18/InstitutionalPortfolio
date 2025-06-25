@@ -1,17 +1,21 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Result } from "./Result";
-import img1 from "../../src/assets/imgs/antes-1.webp";
-import img2 from "../../src/assets/imgs/depois-_1_.webp";
-import img3 from "../../src/assets/imgs/antes-1.webp";
-import img4 from "../../src/assets/imgs/depois-_1_.webp";
-import img5 from "../../src/assets/imgs/antes-1.webp";
-import img6 from "../../src/assets/imgs/depois-_1_.webp";
+import img1 from "../../src/assets/imgs/Caso01Antes.webp";
+import img2 from "../../src/assets/imgs/Caso01Dps.webp";
+import img3 from "../../src/assets/imgs/Caso2implantesantes.jpg";
+import img4 from "../../src/assets/imgs/Caso2implantedps.jpg";
+import img5 from "../../src/assets/imgs/Caso3implantesantes.jpg";
+import img6 from "../../src/assets/imgs/Caso3implantesdps.jpg";
+import img7 from "../../src/assets/imgs/Caso4implantesantesofi.jpg";
+import img8 from "../../src/assets/imgs/Caso4implantesdps.jpg";
+
 export default function ResultsSection() {
   const imagens = [
   { antes: img1, depois: img2 },
   { antes: img3, depois: img4 },
   { antes: img5, depois: img6 },
+  { antes: img7, depois: img8 },
   
 ];
 

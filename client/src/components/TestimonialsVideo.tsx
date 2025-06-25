@@ -10,12 +10,10 @@ const TestimonialsVideo = () => {
           </h2>
 
           <p className="text-xl md:text-xl mb-8 mt-5 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed">
-            Já imaginou transformar completamente o seu sorriso em poucas
-            sessões? <br />
-            As <strong>facetas dentárias</strong> são a escolha ideal para quem
-            busca um sorriso mais branco, harmônico e natural de forma rápida e
-            segura. Elas corrigem imperfeições, fecham espaços e renovam a
-            estética do seu sorriso com resultados impressionantes.
+            Já imaginou recuperar a funcionalidade e estética do seu sorriso de forma estável e duradoura?
+            <br />
+            Nossos implantes dentários devolvem dentes faltantes ou comprometidos com segurança e naturalidade.
+            São uma solução moderna, confortável e de altíssima previsibilidade — garantindo mais confiança e saúde bucal.
           </p>
         </div>
 
@@ -23,7 +21,7 @@ const TestimonialsVideo = () => {
           <div className="aspect-w-9 aspect-h-16 w-full h-auto m-[10px]">
             <iframe
               className="w-full h-[350px] rounded-xl overflow-hidden"
-              src="https://www.youtube.com/embed/FMTWUKg7zzI"
+              src="https://www.youtube.com/embed/jEVnse_7SxE"
               title="YouTube video player"
               frameBorder="0"
               allowFullScreen

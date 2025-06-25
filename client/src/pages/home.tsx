@@ -45,7 +45,6 @@ export default function Home() {
       <StructureSection />
       <Sobre />
       <BenefitsSection />
-      <TestimonialsSection/>
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
