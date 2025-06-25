@@ -42,10 +42,9 @@ export default function Home() {
       <MainSection />
       <ResultsSection />
       <TestimonialsVideo />
-      <StructureSection />
       <Sobre />
+      <StructureSection />
       <BenefitsSection />
-      
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
