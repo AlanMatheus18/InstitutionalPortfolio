@@ -11,8 +11,7 @@ import img7 from "../../src/assets/imgs/Caso4implantesantesofi.jpg";
 import img8 from "../../src/assets/imgs/Caso4implantesdps.jpg";
 import img9 from "../../src/assets/imgs/Caso05Antes.JPG";
 import img10 from "../../src/assets/imgs/Caso5Dps.JPG";
-import img11 from "../../src/assets/imgs/Cas06antes.jpg";
-import img12 from "../../src/assets/imgs/Caso06dps.jpg";
+
 
 
 export default function ResultsSection() {
@@ -22,7 +21,7 @@ export default function ResultsSection() {
     { antes: img5, depois: img6 },
     { antes: img7, depois: img8 },
     { antes: img9, depois: img10 },
-    { antes: img11, depois: img12 },
+    
   ];
 
   const resultSlides = imagens.map((img, index) => (
@@ -54,7 +53,7 @@ export default function ResultsSection() {
 
         {/* DESKTOP: GRADE DE RESULTADOS */}
         <div className="hidden sm:flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
             {resultSlides}
           </div>
         </div>
