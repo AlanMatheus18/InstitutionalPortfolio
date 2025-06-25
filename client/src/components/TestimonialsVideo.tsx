@@ -6,7 +6,7 @@ const TestimonialsVideo = () => {
       <div className="testimonials-container flex justify-center flex-wrap bg-white gap-[50px] p-[40px] relative ">
         <div>
           <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-10 ">
-            O que nossos pacientes dizem sobre nós
+            Transforme Seu Sorriso com Rapidez e Harmonia
           </h2>
 
           <p className="text-xl md:text-xl mb-8 mt-5 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed">
