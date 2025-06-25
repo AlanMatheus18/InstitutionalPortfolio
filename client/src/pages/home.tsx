@@ -46,10 +46,10 @@ export default function Home() {
       <Sobre />
       <StructureSection />
       <BenefitsSection/>
+      <TestimonialsSection />
       <LocationsSection />
       <Footer />
       <FloatingWhatsApp />
-      
     </div>
   );
 }
