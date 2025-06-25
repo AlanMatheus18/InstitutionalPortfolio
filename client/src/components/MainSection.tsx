@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
-import bgOverlay from "../../src/assets/imgs/bgoverlay.webp"; // você deve ter uma versão otimizada
-import ftinvisa from '../../src/assets/imgs/Invisalignfoto.webp'
+import bgOverlay from "../../src/assets/imgs/BGoverlay1.jpg";
+import bgfundo from '../../src/assets/imgs/Lentesgarota.png'
+import logofaceta from '../../src/assets/imgs/DentalSant.webp'
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(faceta);
 
@@ -34,6 +35,7 @@ export default function MainSection() {
       <div className="bg-[#290e49] md:bg-black md:bg-opacity-40 bg-opacity-80 md:backdrop-blur-[2px] backdrop-blur-[7px] w-full h-full absolute top-0 left-0"></div>
 
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px">
+        <img src={logofaceta} alt="" className="md:w-[258px] w-[200px]" />
         <h1 className="text-4xl font-montserrat font-bold mb-6 leading-tight">
           Transforme Seu Sorriso com Facetas Dentárias de Alta Estética
         </h1>
@@ -69,7 +71,7 @@ export default function MainSection() {
 
 
       <div className="foto relative z-10 block sm:hidden">
-        <img src={ftinvisa} alt="Imagem Invisalign" />
+        <img src={bgfundo} alt="Imagem Invisalign"  className="h-[330px]"/>
       </div>
 
 

@@ -3,16 +3,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Result } from "./Result";
 import img1 from "../../src/assets/imgs/antes-1.webp";
 import img2 from "../../src/assets/imgs/depois-_1_.webp";
-import img3 from "../../src/assets/imgs/antes-1.webp";
-import img4 from "../../src/assets/imgs/depois-_1_.webp";
-import img5 from "../../src/assets/imgs/antes-1.webp";
-import img6 from "../../src/assets/imgs/depois-_1_.webp";
+import img3 from "../../src/assets/imgs/Caso01Antes.jpg";
+import img4 from "../../src/assets/imgs/Caso1dps.jpg";
+
+import img7 from "../../src/assets/imgs/Caso02Antes.jpg";
+import img8 from "../../src/assets/imgs/Caso02Dps.jpg";
+
 export default function ResultsSection() {
   const imagens = [
   { antes: img1, depois: img2 },
-  { antes: img3, depois: img4 },
-  { antes: img5, depois: img6 },
-  
+  { antes: img4, depois: img3 },
+  { antes: img7, depois: img8 },
 ];
 
 const resultSlides = imagens.map((img, index) => (
@@ -44,7 +45,7 @@ const resultSlides = imagens.map((img, index) => (
 
         {/* DESKTOP: GRADE DE RESULTADOS */}
         <div className="hidden sm:flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {resultSlides}
           </div>
         </div>
