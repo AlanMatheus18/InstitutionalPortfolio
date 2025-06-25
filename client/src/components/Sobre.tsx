@@ -4,7 +4,7 @@ import facetas from "../../src/assets/imgs/facetas-sobre.jpeg";
 const Sobre = () => {
   return (
     <>
-      <div className="sobre bg-[#F4F4F4] gap-[8px] text-white min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center relative overflow-hidden">
+      <div className="sobre bg-[#F4F4F4] gap-[8px] text-white min-h-screen flex flex-col md:flex-row justify-center items-center relative overflow-hidden">
         <div>
           <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-6 mb-3 ml-3 md:ml-0">
             O que são Facetas Dentárias?
