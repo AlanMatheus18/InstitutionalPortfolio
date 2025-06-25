@@ -39,7 +39,7 @@ export default function MainSection() {
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px">
         <img src={logoinvisa} alt="" className="w-[258px]" />
         <h1 className="text-4xl font-montserrat font-bold mb-6 leading-tight">
-          Sorria com <span className="md:text-blue-700 text-dental-secondary font-bold">Confiança!</span>
+          Sorria com <span className="text-dental-secondary font-bold">Confiança!</span>
         </h1>
         <p className="text-xl md:text-xl mb-8 text-gray-100 max-w-2xl leading-relaxed">
           O alinhador transparente que transforma seu sorriso sem comprometer sua rotina.
