@@ -9,19 +9,25 @@ import img5 from "../../src/assets/imgs/Caso3implantesantes.jpg";
 import img6 from "../../src/assets/imgs/Caso3implantesdps.jpg";
 import img7 from "../../src/assets/imgs/Caso4implantesantesofi.jpg";
 import img8 from "../../src/assets/imgs/Caso4implantesdps.jpg";
+import img9 from "../../src/assets/imgs/Caso05Antes.JPG";
+import img10 from "../../src/assets/imgs/Caso5Dps.JPG";
+import img11 from "../../src/assets/imgs/Cas06antes.jpg";
+import img12 from "../../src/assets/imgs/Caso06dps.jpg";
+
 
 export default function ResultsSection() {
   const imagens = [
-  { antes: img1, depois: img2 },
-  { antes: img3, depois: img4 },
-  { antes: img5, depois: img6 },
-  { antes: img7, depois: img8 },
-  
-];
+    { antes: img1, depois: img2 },
+    { antes: img3, depois: img4 },
+    { antes: img5, depois: img6 },
+    { antes: img7, depois: img8 },
+    { antes: img9, depois: img10 },
+    { antes: img11, depois: img12 },
+  ];
 
-const resultSlides = imagens.map((img, index) => (
-  <Result key={index} imgAntes={img.antes} imgDps={img.depois} />
-));
+  const resultSlides = imagens.map((img, index) => (
+    <Result key={index} imgAntes={img.antes} imgDps={img.depois} />
+  ));
 
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,7 +54,7 @@ const resultSlides = imagens.map((img, index) => (
 
         {/* DESKTOP: GRADE DE RESULTADOS */}
         <div className="hidden sm:flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {resultSlides}
           </div>
         </div>
@@ -93,9 +99,8 @@ const resultSlides = imagens.map((img, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? "bg-dental-secondary" : "bg-gray-300"
-                }`}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? "bg-dental-secondary" : "bg-gray-300"
+                  }`}
               />
             ))}
           </div>

@@ -8,7 +8,7 @@ import TestimonialsSection from "@/components/TestimonalsSection";
 import TestimonialsVideo from "@/components/TestimonialsVideo";
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsapp";
-
+import Profissional from "@/components/Profissional";
 import BenefitsSection from "@/components/BenefitsSection";
 
 export default function Home() {

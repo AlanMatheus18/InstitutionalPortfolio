@@ -38,7 +38,7 @@ export default function MainSection() {
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px ">
         <img src={logoimplante} alt="" className="md:w-[258px] w-[200px]" />
         <h1 className="text-2xl md:text-4xl   font-montserrat font-bold mb-5 leading-tight">
-          Implantes Dentários com Resultados <span className="md:text-blue-700 text-dental-secondary font-bold">Naturais</span> e <span className="md:text-blue-700 text-dental-secondary font-bold">Duradouros</span>
+          Implantes Dentários com Resultados <span className="text-dental-secondary font-bold">Naturais</span> e <span className=" text-dental-secondary font-bold">Duradouros</span>
         </h1>
         <p className="text-xl md:text-xl  mb-8 text-gray-100 max-w-2xl leading-relaxed">
           Volte a sorrir com segurança e qualidade. Avaliação gratuita com especialistas!

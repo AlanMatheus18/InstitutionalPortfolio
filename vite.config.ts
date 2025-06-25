@@ -35,4 +35,5 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
+  assetsInclude: ['**/*.JPG'],
 });
