@@ -1,7 +1,7 @@
-import tec from "../../src/assets/imgs/3D.jpg";
-import indolor from "../../src/assets/imgs/INDOLOR.jpg";
-import natural from "../../src/assets/imgs/NATURAL.jpg";
-import equipe from "../../src/assets/imgs/EQUIPE.jpg";
+import tec from "../../src/assets/imgs/3D.webp";
+import indolor from "../../src/assets/imgs/INDOLOR.webp";
+import natural from "../../src/assets/imgs/NATURAL.webp";
+import equipe from "../../src/assets/imgs/EQUIPE.webp";
 
 const structureImages = [
   {

@@ -3,14 +3,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Result } from "./Result";
 import img1 from "../../src/assets/imgs/Caso01Antes.webp";
 import img2 from "../../src/assets/imgs/Caso01Dps.webp";
-import img3 from "../../src/assets/imgs/Caso2implantesantes.jpg";
-import img4 from "../../src/assets/imgs/Caso2implantedps.jpg";
-import img5 from "../../src/assets/imgs/Caso3implantesantes.jpg";
-import img6 from "../../src/assets/imgs/Caso3implantesdps.jpg";
-import img7 from "../../src/assets/imgs/Caso4implantesantesofi.jpg";
-import img8 from "../../src/assets/imgs/Caso4implantesdps.jpg";
-import img9 from "../../src/assets/imgs/Caso05Antes.JPG";
-import img10 from "../../src/assets/imgs/Caso5Dps.JPG";
+import img3 from "../../src/assets/imgs/Caso2implantesantes.webp";
+import img4 from "../../src/assets/imgs/Caso2implantedps.webp";
+import img5 from "../../src/assets/imgs/Caso3implantesantes.webp";
+import img6 from "../../src/assets/imgs/Caso3implantesdps.webp";
+import img7 from "../../src/assets/imgs/Caso4implantesantesofi.webp";
+import img8 from "../../src/assets/imgs/Caso4implantesdps.webp";
+import img9 from "../../src/assets/imgs/Caso05Antes.webp";
+import img10 from "../../src/assets/imgs/Caso5Dps.webp";
 
 
 

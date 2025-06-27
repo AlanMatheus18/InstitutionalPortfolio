@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import bgimplante from "../../src/assets/imgs/BGImplantes.webp";
-import bgOverlay from "../../src/assets/imgs/BGoverlay2.jpg";
+import bgOverlay from "../../src/assets/imgs/BGoverlay2.webp";
 import logoimplante from "../../src/assets/imgs/DentalSant.webp"
-import casal from "../../src/assets/imgs/Casal.png"
+import casal from "../../src/assets/imgs/Casal.webp"
 
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(bgimplante);
