@@ -63,10 +63,15 @@ export default function StructureSection() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <button
-            className="inline-block bg-[#0f8516]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
-            Agende uma Avaliação Gratuita
-          </button>
+          <a
+              href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-[#0f8516] text-white ml-6 md:ml-0 font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+                Agende uma Avaliação Gratuita
+              </button>
+            </a>
         </div>
       </div>
     </section>
