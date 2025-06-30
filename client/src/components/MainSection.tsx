@@ -3,7 +3,7 @@ import { ChevronDown } from "lucide-react";
 import bginvisalign from "../../src/assets/imgs/BgInvisalign.jpg";
 import bgOverlay from "../../src/assets/imgs/Bgoverlayinvisalign2.jpg";
 import ftinvisa from '../../src/assets/imgs/Invisalignfoto.webp';
-import logoinvisa from "../../src/assets/imgs/Logoinvisa.webp"
+import logoinvisa from "../../src/assets/imgs/Logoinvisa.webp";
 
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(bginvisalign);
@@ -48,7 +48,7 @@ export default function MainSection() {
         </p>
         <div className="flex justify-center md:justify-start items-center">
           <a
-            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+            href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93"
             target="_blank"
             rel="noopener noreferrer"
           >

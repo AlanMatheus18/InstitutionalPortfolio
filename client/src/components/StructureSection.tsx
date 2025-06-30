@@ -1,35 +1,37 @@
-import rec from '../../src/assets/imgs/Recepcao.webp'
-import consult from '../../src/assets/imgs/Itero.jpg'
-import relax from '../../src/assets/imgs/Relaxante.webp'
-import tec from '../../src/assets/imgs/EstruturaGeral.jpg'
-
-
+import rec from "../../src/assets/imgs/Recepcao.webp";
+import consult from "../../src/assets/imgs/Itero.jpg";
+import relax from "../../src/assets/imgs/Relaxante.webp";
+import tec from "../../src/assets/imgs/EstruturaGeral.jpg";
 
 const structureImages = [
   {
     src: rec,
     alt: "Recepção moderna da clínica odontológica",
     title: "Recepção Acolhedora",
-    description: "Ambiente elegante e confortável para receber nossos pacientes com todo o carinho e atenção que merecem."
+    description:
+      "Ambiente elegante e confortável para receber nossos pacientes com todo o carinho e atenção que merecem.",
   },
   {
     src: consult,
     alt: "Consultório odontológico moderno com equipamentos de última geração",
-    title: "Consultórios Modernos", 
-    description: "Equipamentos de última geração e tecnologia avançada para garantir tratamentos precisos e confortáveis."
+    title: "Consultórios Modernos",
+    description:
+      "Equipamentos de última geração e tecnologia avançada para garantir tratamentos precisos e confortáveis.",
   },
   {
     src: tec,
     alt: "Equipamentos odontológicos de alta tecnologia",
     title: "Tecnologia Avançada",
-    description: "Investimos constantemente em tecnologia para oferecer os melhores resultados com máximo conforto e segurança."
+    description:
+      "Investimos constantemente em tecnologia para oferecer os melhores resultados com máximo conforto e segurança.",
   },
   {
     src: relax,
     alt: "Sala de espera confortável da clínica odontológica",
     title: "Ambiente Relaxante",
-    description: "Espaços pensados para proporcionar tranquilidade e bem-estar durante toda sua experiência em nossa clínica."
-  }
+    description:
+      "Espaços pensados para proporcionar tranquilidade e bem-estar durante toda sua experiência em nossa clínica.",
+  },
 ];
 
 export default function StructureSection() {
@@ -41,15 +43,16 @@ export default function StructureSection() {
             Nossa Estrutura
           </h2>
           <p className="text-[18px] text-gray-600 max-w-2xl mx-auto">
-            Ambiente confortável e moderno para seu atendimento, com tecnologia de ponta e equipe especializada.
+            Ambiente confortável e moderno para seu atendimento, com tecnologia
+            de ponta e equipe especializada.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {structureImages.map((item, index) => (
             <div key={index} className="animate-on-scroll">
-              <img 
-                src={item.src} 
+              <img
+                src={item.src}
                 alt={item.alt}
                 className="rounded-2xl shadow-xl w-full h-80 object-cover"
               />
@@ -63,10 +66,15 @@ export default function StructureSection() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <button
-            className="inline-block bg-[#0f8516]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
-            Agende uma Avaliação Gratuita
-          </button>
+          <a
+            href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="inline-block bg-[#0f8516]  text-[white] font-montserrat font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-xl">
+              Agende uma Avaliação Gratuita
+            </button>
+          </a>
         </div>
       </div>
     </section>
