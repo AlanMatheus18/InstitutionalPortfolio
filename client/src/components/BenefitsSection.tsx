@@ -1,31 +1,32 @@
-import tec from "../../src/assets/imgs/3D.jpg";
-import indolor from "../../src/assets/imgs/INDOLOR.jpg";
-import natural from "../../src/assets/imgs/NATURAL.jpg";
-import equipe from "../../src/assets/imgs/EQUIPE.jpg";
+import tec from "../../src/assets/imgs/branco.webp";
+import indolor from "../../src/assets/imgs/rapidoseguro.webp";
+import natural from "../../src/assets/imgs/removemanchas.webp";
+import equipe from "../../src/assets/imgs/problemas.webp";
+import { title } from "process";
 
 const structureImages = [
   {
     src: tec,
-    alt: "Tecnologia de Ponta",
-    title: "Tecnologia de Ponta",
+    alt: "Sorriso Mais Branco",
+    title: "Sorriso Mais Branco",
     description: "",
   },
   {
     src: indolor,
-    alt: "Procedimento Indolor e Seguro",
-    title: "Procedimento Indolor e Seguro",
+    alt: "Rápido e Seguro",
+    title: "Rápido e Seguro",
     description: "",
   },
   {
     src: natural,
-    alt: "Estética Natural",
-    title: "Estética Natural",
+    alt: "Remove Manchas",
+    title: "Remove Manchas",
     description: "",
   },
   {
     src: equipe,
-    alt: "Equipe Especializada",
-    title: "Equipe Especializada",
+    alt: "Ajuda a Detectar problemas nos dentes",
+    title: "Ajuda a Detectar Problemas",
     description: "",
   },
 ];
@@ -36,7 +37,7 @@ export default function BenefitsSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-3xl font-montserrat font-bold text-dental-primary mb-4">
-            Por que escolher nossas facetas?
+            Por que Clarear os Dentes?
           </h2>
         </div>
 

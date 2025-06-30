@@ -5,7 +5,7 @@ import ResultsSection from "@/components/ResultsSection";
 import StructureSection from "@/components/StructureSection";
 import LocationsSection from "@/components/LocationsSection";
 import TestimonialsSection from "@/components/TestimonalsSection";
-import TestimonialsVideo from "@/components/TestimonialsVideo";
+// import TestimonialsVideo from "@/components/TestimonialsVideo";
 import Footer from "@/components/footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsapp";
 
@@ -41,9 +41,9 @@ export default function Home() {
     <div className="min-h-screen">
       <MainSection />
       <ResultsSection />
-      <TestimonialsVideo />
-      <StructureSection />
+      {/* <TestimonialsVideo /> */}
       <Sobre />
+      <StructureSection />
       <BenefitsSection />
       <TestimonialsSection/>
       <LocationsSection />

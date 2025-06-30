@@ -1,5 +1,5 @@
 import React from "react";
-import facetas from "../../src/assets/imgs/facetas-sobre.jpeg";
+import denteclaro from "../../src/assets/imgs/denteclaro.webp";
 
 const Sobre = () => {
   return (
@@ -7,12 +7,10 @@ const Sobre = () => {
       <div className="sobre bg-[#F4F4F4] gap-[8px] text-white min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center relative overflow-hidden">
         <div>
           <h2 className="text-[25px] font-montserrat font-bold text-dental-primary mt-6 mb-3 ml-3 md:ml-0">
-            O que são Facetas Dentárias?
+            O que é o clareamento dental?
           </h2>
           <p className="text-xl md:text-xl mb-8 ml-3 md:ml-0 text-gray-600 max-w-2xl leading-relaxed ">
-            Facetas dentárias são lâminas finas, geralmente feitas de porcelana
-            ou resina composta, que são coladas na parte da frente dos dentes
-            para melhorar a aparência do sorriso.
+            O clareamento dental é uma microlimpeza feita com o objetivo de eliminar pigmentos que se acumulam nos dentes e os deixam manchados e amarelados. A maior parte destes provém de resíduos de alimentos, que penetra a camada porosa dos dentes e chegam até a dentina.
           </p>
 
           <div className="btn">
@@ -30,7 +28,7 @@ const Sobre = () => {
 
         <div className="flex justify-center items-center p-[10px] h-auto md:h-[470px] w-auto  rounded-xl overflow-hidden ">
           <img
-            src={facetas}
+            src={denteclaro}
             alt=""
             className="img h-[300px] w-[500px]  rounded-xl overflow-hidden "
           />
