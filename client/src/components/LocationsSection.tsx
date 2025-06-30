@@ -1,5 +1,5 @@
 const scrollToForm = () => {
-  document.getElementById('formulario')?.scrollIntoView({ behavior: 'smooth' });
+  document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
 };
 
 export default function LocationsSection() {
@@ -10,15 +10,17 @@ export default function LocationsSection() {
           <h2 className="text-4xl md:text-4xl font-montserrat font-bold text-dental-primary mb-4">
             Nossa Localização
           </h2>
-
         </div>
 
         <div className="gap-12 max-w-6xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden animate-on-scroll">
             <div className="p-8">
-              <h3 className="text-3xl font-montserrat font-bold text-dental-primary mb-4">Piedade</h3>
+              <h3 className="text-3xl font-montserrat font-bold text-dental-primary mb-4">
+                Piedade
+              </h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Nossa unidade está localizada em Piedade, com fácil acesso e estacionamento disponível.
+                Nossa unidade está localizada em Piedade, com fácil acesso e
+                estacionamento disponível.
               </p>
               <div className="mb-6">
                 <iframe
@@ -31,20 +33,17 @@ export default function LocationsSection() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />
-
               </div>
-              <a href="https://www.google.com/maps/place/Cl%C3%ADnica+Odontol%C3%B3gica+Dental+Sant%C3%A9/@-8.174582,-34.916794,16z/data=!4m6!3m5!1s0x7aae1afedba4ce5:0xd1768fbdcfa5addb!8m2!3d-8.1745822!4d-34.9167938!16s%2Fg%2F11gfnf_3bs?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D">
-              <button
-                onClick={scrollToForm}
-                className="inline-block bg-dental-secondary hover:bg-blue-400 text-white font-montserrat font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105"
+              <a
+                href="https://www.google.com/maps/place/Cl%C3%ADnica+Odontol%C3%B3gica+Dental+Sant%C3%A9/@-8.174582,-34.916794,16z/data=!4m6!3m5!1s0x7aae1afedba4ce5:0xd1768fbdcfa5addb!8m2!3d-8.1745822!4d-34.9167938!16s%2Fg%2F11gfnf_3bs?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
               >
-                Venha Conhecer a nossa Clinica
-              </button>
+                <button className="inline-block bg-dental-secondary hover:bg-blue-400 text-white font-montserrat font-bold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105">
+                  Venha Conhecer a nossa Clinica
+                </button>
               </a>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>

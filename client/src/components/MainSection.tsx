@@ -2,14 +2,16 @@ import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import bgimplante from "../../src/assets/imgs/BGImplantes.webp";
 import bgOverlay from "../../src/assets/imgs/BGoverlay2.webp";
-import logoimplante from "../../src/assets/imgs/DentalSant.webp"
-import casal from "../../src/assets/imgs/implante-section.webp"
+import logoimplante from "../../src/assets/imgs/DentalSant.webp";
+import casal from "../../src/assets/imgs/implante-section.webp";
 
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(bgimplante);
 
   const scrollToForm = () => {
-    document.getElementById("formulario")?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("formulario")
+      ?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -38,15 +40,17 @@ export default function MainSection() {
       <div className="container mt-[20px] md:mt-[0px] md:mb-[-20px] px-20 relative z-10 w-2px ">
         <img src={logoimplante} alt="" className="md:w-[258px] w-[200px]" />
         <h1 className="text-2xl md:text-4xl   font-montserrat font-bold mb-5 leading-tight">
-          Implantes Dentários com Resultados <span className="text-dental-secondary font-bold">Naturais</span> e <span className=" text-dental-secondary font-bold">Duradouros</span>
+          Implantes Dentários com Resultados{" "}
+          <span className="text-dental-secondary font-bold">Naturais</span> e{" "}
+          <span className=" text-dental-secondary font-bold">Duradouros</span>
         </h1>
         <p className="text-xl md:text-xl  mb-8 text-gray-100 max-w-2xl leading-relaxed">
-          Volte a sorrir com segurança e qualidade. Avaliação gratuita com especialistas!
-
+          Volte a sorrir com segurança e qualidade. Avaliação gratuita com
+          especialistas!
         </p>
         <div className="flex justify-center md:justify-start items-center">
           <a
-            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%C2%A0seu%C2%A0site"
+            href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -60,7 +64,10 @@ export default function MainSection() {
         </div>
       </div>
 
-      <div className="hidden md:block md:w-[800px] h-[600px] scale-[0.90]" id="formulario">
+      <div
+        className="hidden md:block md:w-[800px] h-[600px] scale-[0.90]"
+        id="formulario"
+      >
         <iframe
           className="mt-[-80px] md:mt-[-80px]"
           src="https://forms.kommo.com/rwvxtrv"
@@ -72,12 +79,12 @@ export default function MainSection() {
       </div>
 
       <div className="foto relative z-10 block sm:hidden w-full mt-[50px]">
-        <img src={casal} alt="Imagem Invisalign" className="w-full h-auto object-cover" />
+        <img
+          src={casal}
+          alt="Imagem Invisalign"
+          className="w-full h-auto object-cover"
+        />
       </div>
-
-
-
-
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-dental-secondary text-2xl" />
