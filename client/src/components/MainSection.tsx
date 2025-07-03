@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import clareamento from "../../src/assets/imgs/clareamentobg.webp";
 import bgOverlay from "../../src/assets/imgs/BGoverlay2.webp";
-import ftclara from "../../src/assets/imgs/ftclara.png";
+import ftclara from "../../src/assets/imgs/Lentesgarota-DA7w6DNh.webp";
 import logoimplante from "../../src/assets/imgs/logodental.webp";
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(clareamento);
