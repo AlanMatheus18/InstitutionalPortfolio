@@ -9,16 +9,14 @@ import img5 from "../../src/assets/imgs/clareamento03antes.webp";
 import img6 from "../../src/assets/imgs/clareamento03dps.webp";
 export default function ResultsSection() {
   const imagens = [
-  { antes: img1, depois: img2 },
-  { antes: img3, depois: img4 },
-  { antes: img5, depois: img6 },
-  
-];
+    { antes: img1, depois: img2 },
+    { antes: img3, depois: img4 },
+    { antes: img5, depois: img6 },
+  ];
 
-const resultSlides = imagens.map((img, index) => (
-  <Result key={index} imgAntes={img.antes} imgDps={img.depois} />
-));
-
+  const resultSlides = imagens.map((img, index) => (
+    <Result key={index} imgAntes={img.antes} imgDps={img.depois} />
+  ));
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = resultSlides.length;
