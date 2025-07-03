@@ -7,11 +7,14 @@ import img3 from "../../src/assets/imgs/clareamento02antes.webp";
 import img4 from "../../src/assets/imgs/clareamento02dps.webp";
 import img5 from "../../src/assets/imgs/clareamento03antes.webp";
 import img6 from "../../src/assets/imgs/clareamento03dps.webp";
+import img7 from "../../src/assets/imgs/clareamento04antes.webp";
+import img8 from "../../src/assets/imgs/clareamento04dps.webp";
 export default function ResultsSection() {
   const imagens = [
     { antes: img1, depois: img2 },
     { antes: img3, depois: img4 },
     { antes: img5, depois: img6 },
+    { antes: img7, depois: img8 },
   ];
 
   const resultSlides = imagens.map((img, index) => (
