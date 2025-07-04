@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import clareamento from "../../src/assets/imgs/clareamentobg.webp";
 import bgOverlay from "../../src/assets/imgs/BGoverlay2.webp";
-import ftclara from "../../src/assets/imgs/Lentesgarota-DA7w6DNh.webp";
+import ftclara from "../../src/assets/imgs/faceta-de-porcelana.jpeg";
 import logoimplante from "../../src/assets/imgs/logodental.webp";
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(clareamento);
@@ -75,8 +75,8 @@ export default function MainSection() {
         ></iframe>
       </div>
 
-      <div className="foto relative z-10 block sm:hidden">
-        <img src={ftclara} alt="Imagem clareamento" />
+      <div className="foto relative z-10 block sm:hidden mb-[30px]  ">
+        <img src={ftclara} alt="Imagem clareamento" className="w-[300px] h-[270px] mt-[30px] g-[5px] rounded-lg" />
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
