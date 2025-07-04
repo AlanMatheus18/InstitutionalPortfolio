@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import faceta from "../../src/assets/imgs/facetas-porcelana.jpg";
 import bgOverlay from "../../src/assets/imgs/BGoverlay1.jpg";
-import bgfundo from '../../src/assets/imgs/Lentesgarota.png'
+import bgfundo from '../../src/assets/imgs/faceta-de-porcelana.jpeg'
 import logofaceta from '../../src/assets/imgs/DentalSant.webp'
 export default function MainSection() {
   const [backgroundImage, setBackgroundImage] = useState(faceta);
@@ -70,8 +70,8 @@ export default function MainSection() {
       </div>
 
 
-      <div className="foto relative z-10 block sm:hidden">
-        <img src={bgfundo} alt="Imagem Invisalign"  className="h-[330px]"/>
+      <div className="foto relative z-10 block sm:hidden mb-[30px]">
+        <img src={bgfundo} alt="Imagem Invisalign"  className="w-[300px] h-[270px] mt-[30px] g-[5px] rounded-lg"/>
       </div>
 
 
