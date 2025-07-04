@@ -101,7 +101,7 @@ export default function ResultsSection() {
         {/* CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://dentalsante.aiatende.dev.br/conversions/whatsapp/wbhk?text=Ol%C3%A1,%20vim%20pelo%20seu%20site"
+            href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93"
             target="_blank"
             rel="noopener noreferrer"
           >

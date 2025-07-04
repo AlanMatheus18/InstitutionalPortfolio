@@ -39,7 +39,7 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://wa.me/558130940025"
+                href="https://tintim.link/whatsapp/e5a967f3-c8b4-4db8-b4b5-62189b3d10fc/2401d20a-39b5-47b2-8af4-20caf1ee5f93"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-dental-secondary hover:bg-blue-400 text-dental-primary rounded-full p-3 transition-all duration-300 hover:scale-110"
